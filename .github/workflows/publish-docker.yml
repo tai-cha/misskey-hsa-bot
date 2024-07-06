@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/my-bun-app
+          images: ${{ secrets.DOCKER_USERNAME }}/misskey-hsa-bot
           tags: |
             type=edge
             type=ref,event=pr
