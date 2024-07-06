@@ -15,7 +15,8 @@
     "puppeteer": "^22.12.1"
   },
   "scripts": {
-    "start": "bun run ./src/index.js"
+    "start": "bun run ./src/index.ts",
+    "build": "bun build ./src/index.ts --outdir=dist"
   },
   "license": "AGPL-3.0-only"
 }

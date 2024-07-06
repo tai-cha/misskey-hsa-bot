@@ -2,8 +2,6 @@ import { captureElement } from './captureElement'
 import { Misskey } from './misskey'
 import type { Endpoints } from 'misskey-js'
 import { exit } from 'process'
-import { makeFileMultipart } from './utils/makeFileMultipart'
-import { fileToBlob } from './utils/fileToBlob'
 
 const url = 'https://www.wbgt.env.go.jp/alert.php'
 

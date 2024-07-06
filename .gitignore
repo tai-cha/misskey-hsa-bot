@@ -1,4 +1,5 @@
 /captures
 !/captures/.gitkeep
+/dist
 /node_modules
 .env
