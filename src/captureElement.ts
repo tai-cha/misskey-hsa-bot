@@ -35,6 +35,9 @@ export const captureElement = async (url: string, selector: string, outputPath: 
   }, selector);
 
   const customCSS = `
+    html, body {
+      font-family: 'Noto Sans JP', sans-serif, Meiryo, "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Noto, Takao !important;
+    }
     span.b1, span.b2 {
       top: 14px !important;
     }
