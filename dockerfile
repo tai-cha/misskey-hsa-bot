@@ -1,6 +1,13 @@
 # Use the official Bun image
 FROM oven/bun:latest AS base
 WORKDIR /usr/src/app
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+RUN apt-get update && apt-get install -y nodejs
+RUN npx @puppeteer/browsers install chrome@stable
 
 # Install dependencies into a temp directory to cache them and speed up future builds
 FROM base AS install
